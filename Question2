@@ -1,0 +1,23 @@
+def factorial(n):
+    # Check if the input is negative
+    if n < 0:
+        print("Factorial is undefined for negative numbers.")
+        return None
+    
+    # Initialize the factorial result
+    result = 1
+    
+    # Calculate factorial using a loop
+    for i in range(1, n + 1):
+        result *= i
+    
+    return result
+
+# Get user input for the number
+num = int(input("Enter a number: "))
+
+# Call the factorial function and print the result
+result = factorial(num)
+
+if result is not None:
+    print(f"The factorial of {num} is: {result}")
